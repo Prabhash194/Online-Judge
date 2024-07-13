@@ -334,24 +334,26 @@ useEffect(()=>{
           </div>
 
           {/* Code editor */}
-          <Editor
-            value={code}
-            onValueChange={code => setCode(code)}
-            highlight={code => highlight(code, languages.js)}
-            padding={10}
-            style={{
-              fontFamily: '"Fira code", "Fira Mono", monospace',
-              fontSize: 16, // Adjust font size as per your requirement
-              minHeight: '300px',
-              height: '400px', // Adjust height for more space
-              width: '100%',
-              backgroundColor: '#1e1e1e', // VS Code-like background color
-              color: '#d4d4d4', // VS Code-like text color
-              borderRadius: '4px',
-              border: '1px solid #3c3c3c', // VS Code-like border color
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' // Subtle shadow for a more VS Code-like feel
-            }}
-          />
+          <div className="bg-gray-800 shadow-md w-full h-screen mb-4" style={{ overflowY: 'auto' }}>
+      <Editor
+        value={code}
+        onValueChange={code => setCode(code)}
+        highlight={code => highlight(code, languages.js)}
+        padding={10}
+        style={{
+          fontFamily: '"Fira code", "Fira Mono", monospace',
+          fontSize: 18,
+          outline: 'none',
+          border: 'none',
+          backgroundColor: '#2d2d2d',
+          color: '#f8f8f2',
+          height: '100%',
+          width: '100%',
+          overflowX: 'auto',
+          whiteSpace: 'pre', // preserve whitespace formatting for long lines
+        }}
+      />
+    </div>
 
           {/* Console, Run, Submit buttons */}
           <div className="mt-4 flex justify-between p-4 bg-gray-100 border-t border-gray-300 rounded-bl rounded-br">

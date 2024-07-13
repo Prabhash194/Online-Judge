@@ -10,7 +10,7 @@ import ProblemDetail from './components/problems/problemDetails';
 import UpdatedProblem from './components/problems/updateProblem';
 import ProblemForm from './components/problems/problemForm';
 
-import Dashboard from "./pages/dashboard";
+
 import Blogs from "./pages/blogs";
 import ProtectedRoute from './pages/ProtectedRoute';
 

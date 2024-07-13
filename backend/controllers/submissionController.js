@@ -50,8 +50,8 @@ const run=async(req,res)=>{
     // });
 };
 const submit=async(req,res)=>{
-    const { language = 'cpp', code,problemId,userId} = req.body;
-  
+    const { language = 'cpp', code,problemId} = req.body;
+    const userId=req.user.id;
     console.log("checking userid",userId);
     if (!code) {
         return res.status(400).json({ success: false, error: "Empty code!" });
