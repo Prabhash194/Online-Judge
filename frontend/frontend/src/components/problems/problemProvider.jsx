@@ -11,7 +11,7 @@ const ProblemProvider=({children})=>{
 
             try{
                 console.log("Fetching Problem");
-                const response=await axios.get("http://localhost:4000/problems/problemset");
+                const response=await axios.get("https://backend.online-judge.store/problems/problemset");
                 console.log('API Response:',response.data);
 
                 // CORRECTLY ACCESSING THE PROBLEM ARRAY

@@ -24,7 +24,7 @@ const ProblemForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:4000/problems/create', {
+            const response = await axios.post('https://backend.online-judge.store/problems/create', {
                 problemid,
                 title,
                 description,

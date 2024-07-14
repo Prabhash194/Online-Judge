@@ -22,7 +22,7 @@ const ContestForm = () => {
     e.preventDefault();
     try{
       console.log("checking to create contests")
-      const response=await axios.post('http://localhost:4000/contests/create',{
+      const response=await axios.post('https://backend.online-judge.store/contests/create',{
         contest_name,
         problems,
         start_time,

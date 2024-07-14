@@ -11,7 +11,7 @@ const ContestProvider=({children})=>{
         const fetchContests=async()=>{
             try{
                 console.log("Fetching Contests");
-                const response=await axios.get("http://localhost:4000/contests/allcontests");
+                const response=await axios.get("https://backend.online-judge.store/contests/allcontests");
                 console.log('API response',response.data);
 
                 // correctly access the contest array

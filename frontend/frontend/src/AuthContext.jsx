@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const AuthContext = createContext();
 
-const BASE_URL = "http://localhost:4000";
+const BASE_URL = "https://backend.online-judge.store";
 // eslint-disable-next-line react/prop-types
 export const AuthProvider = ({ children }) => {
     const [auth, setAuth] = useState(() => {

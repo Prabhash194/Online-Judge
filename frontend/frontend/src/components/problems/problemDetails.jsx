@@ -115,7 +115,7 @@ const ProblemDetail = () => {
       input
     };
     try {
-      const { data } = await axios.post('http://localhost:8000/submissions/run', payload);
+      const { data } = await axios.post('https://backend.online-judge.store/submissions/run', payload);
       setOutput({message:data.output,color:'green'});
       setActiveConsoleTab('output');
       setShowConsoleOptions(true); // Ensure console options are visible when Run is clicked
@@ -139,7 +139,7 @@ const ProblemDetail = () => {
     };
 
     try {
-      const { data } = await axios.post('http://localhost:8000/submissions/submit', payload, { withCredentials: true });
+      const { data } = await axios.post('https://backend.online-judge.store/submissions/submit', payload, { withCredentials: true });
       const statusMessage=data.data.submission.status==='Accepted' ? 'Accepted' : 'All testcases did not passed.';
       const statusColor=data.status==='Accepted' ? 'green' : 'red';
 
@@ -164,7 +164,7 @@ const ProblemDetail = () => {
  
     const fetchProblem = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/problems/problem/${id}`);
+        const response = await axios.get(`https://backend.online-judge.store/problems/problem/${id}`);
         setProblem(response.data.data.problem);
         setLoading(false);
       } catch (error) {
@@ -175,7 +175,7 @@ const ProblemDetail = () => {
     };
     const fetchSubmissions=async()=>{
       try{
-        const response=await axios.get(`http://localhost:8000/submissions/${id}`);
+        const response=await axios.get(`https://backend.online-judge.store/submissions/${id}`);
         console.log('All submissions:',response.data);
 
         if(response.data.status==='Success'){

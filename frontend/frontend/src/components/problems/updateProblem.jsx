@@ -24,7 +24,7 @@ const UpdatedProblem=()=>{
     useEffect(()=>{
         const fetchProblem=async()=>{
             try{
-                const response=await axios.get(`http://localhost:4000/problems/problem/${id}`);
+                const response=await axios.get(`https://backend.online-judge.store/problems/problem/${id}`);
                 const problemData=response.data.data.data  //// Assuming data is structured as { status: 'Success', data: { problem details } }
 
                 setProblemID(problemData.problemid);
@@ -70,7 +70,7 @@ const UpdatedProblem=()=>{
             testcase,
             
         };
-        axios.put(`http://localhost:4000/problems/update/${id}`,UpdatedProblem)
+        axios.put(`https://backend.online-judge.store/problems/update/${id}`,UpdatedProblem)
         .then(response=>{
             console.log('Problem updated successfullly:',response.data)
 
