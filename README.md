@@ -35,13 +35,13 @@ Description:
 A web application build using MERN Stack where users can test their coding skills in C++ programming language.
 It is a platform where users can practice DSA questions of different levels Easy, Medium and Hard and test their skills.
 
-</br></br>
 Languages:
 </br>
 C++
-</br></br>
 
 Deployment:
+<br><br/>
 Utilizes Docker Container for flexibilty and provides a consistent and isolated environment, 
 ensuring that the online judge system runs smoothly across different setups.
+It simplifies deployment and scaling by packaging all dependencies and configurations into a single container.
 
