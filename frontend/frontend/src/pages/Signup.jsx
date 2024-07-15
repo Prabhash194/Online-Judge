@@ -60,7 +60,7 @@ const Register = () => {
                     <form onSubmit={handleRegister} className="w-full space-y-4">
                     <input
                         onChange={(e) => setUsername(e.target.value)}
-                        value={username}
+                        value={email}
                         className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
                         type="text"
                         placeholder="Enter your username"
@@ -68,7 +68,7 @@ const Register = () => {
                     />
                     <input
                         onChange={(e) => setEmail(e.target.value)}
-                        value={email}
+                        value={username}
                         className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
                         type="email"
                         placeholder="Enter your email"
