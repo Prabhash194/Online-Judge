@@ -32,7 +32,7 @@ const Register = () => {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            await register(email,username, password);
+            await register(username,email, password);
             navigate("/login");
             alert("User registered");
         } catch (err) {
