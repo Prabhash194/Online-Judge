@@ -40,7 +40,7 @@ Languages:
 C++
 
 Deployment:
-<br><br/>
+</br>
 Utilizes Docker Container for flexibilty and provides a consistent and isolated environment, 
 ensuring that the online judge system runs smoothly across different setups.
 It simplifies deployment and scaling by packaging all dependencies and configurations into a single container.
