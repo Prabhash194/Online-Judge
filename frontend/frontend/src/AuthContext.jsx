@@ -61,8 +61,8 @@ export const AuthProvider = ({ children }) => {
         }
     };
 
-    const register = async (username, email, password) => {
-        await axios.post(`${BASE_URL}/register`, { username, email, password});
+    const register = async (email, username, password) => {
+        await axios.post(`${BASE_URL}/register`, { email,username, password});
     };
 
     const logout = async () => {
