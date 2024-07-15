@@ -29,7 +29,7 @@ FEATURES:
 </br>
 9.Blog section added
 
-</br></br>
+
 Description:
 </br>
 A web application build using MERN Stack where users can test their coding skills in C++ programming language.
@@ -40,10 +40,8 @@ Languages:
 </br>
 C++
 </br></br>
-Prerequisites:
-</br>
-1.Node.js
-</br>
-2.Docker Desktop
 
+Deployment:
+Utilizes Docker Container for flexibilty and provides a consistent and isolated environment, 
+ensuring that the online judge system runs smoothly across different setups.
 
