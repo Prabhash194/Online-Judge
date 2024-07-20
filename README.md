@@ -27,6 +27,9 @@ FEATURES:
      </br>
      c.Accepted
      </br>
+     d.Runtime Error
+     </br>
+     </br>
 8.See previous submissions
 </br>
 9.Blog section added
