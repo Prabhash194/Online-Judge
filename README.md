@@ -21,13 +21,13 @@ FEATURES:
 </br>
 7.Check Verdict:
 </br>
-     a.Compilation Error
+     a.<u>Compilation Error<u/>
      </br>
      b.<u>Wrong Answer<u/>
      </br>
      c.Accepted
      </br>
-     d.Runtime Error
+     d.<b>Runtime Error<b/>
      </br>
      </br>
 8.See previous submissions
