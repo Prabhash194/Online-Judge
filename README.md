@@ -21,9 +21,9 @@ FEATURES:
 </br>
 7.Check Verdict:
 </br>
-     a.<ul>Compilation Error<ul/>
+     a.Compilation Error
      </br>
-     b.<ul>Wrong Answer<ul/>
+     b.<u>Wrong Answer<u/>
      </br>
      c.Accepted
      </br>
